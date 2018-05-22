@@ -2,7 +2,7 @@
   "name": "@tplss/node",
   "version": "0.0.0",
   "author": "薛定谔的猫 <hh_2013@foxmail.com>",
-  "description": "",
+  "description": "Node.js boilerplate",
   "main": "./dist/lib.min.js",
   "module": "./dist/lib.esm.js",
   "scripts": {

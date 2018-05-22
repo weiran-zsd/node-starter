@@ -1,18 +1,16 @@
-# nodejs-starter
+# node
+> a Node.js boilerplate repo，with some useful deps.
 
 ## Usage
 
 ```bash
-npm install
-
-# eslint
-npm run lint
-
-# running tests
-npm test
+$ npm install -g degit
+$ degit tplss/node
 ```
 
 ## Features
 
 + eslint
++ rollup
++ mocha
 + MIT license
