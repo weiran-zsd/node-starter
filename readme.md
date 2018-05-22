@@ -1,5 +1,5 @@
 # node
-> a Node.js boilerplate repo，with some useful deps.
+> a Node.js boilerplate repo, with some useful deps.
 
 ## Usage
 
