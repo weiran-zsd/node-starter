@@ -1,0 +1,46 @@
+{
+    "name": "@tplss/node",
+    "version": "0.0.0",
+    "author": "薛定谔的猫 <hh_2013@foxmail.com>",
+    "description": "",
+    "main": "./lib/index.js",
+    "scripts": {
+        "lint": "eslint lib tests",
+        "test": "mocha tests/**/*"
+    },
+    "files": [
+        "LICENSE",
+        "README.md",
+        "lib"
+    ],
+    "dependencies": {},
+    "devDependencies": {
+        "eslint": "^5.0.0-alpha.3",
+        "eslint-config-egg": "^7.0.0",
+        "mocha": "^5.2.0"
+    },
+    "keywords": [
+        "Node.js"
+    ],
+    "eslintConfig": {
+        "extends": [
+            "egg",
+            "plugin:node/recommended"
+        ],
+        "plugins": [
+            "node"
+        ],
+        "overrides": {
+            "files": [
+                "tests/"
+            ],
+            "env": {
+                "mocha": true
+            }
+        }
+    },
+    "license": "MIT",
+    "engines": {
+        "node": ">=6"
+    }
+}
