@@ -42,6 +42,4 @@ module.exports = [
     },
     plugins: [ resolve(), common(), buble(), butternut({ check: true }) ],
   },
-
-
 ];
