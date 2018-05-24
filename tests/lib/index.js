@@ -8,3 +8,4 @@ describe('add', () => {
     assert.equal(add(1, 1), 2);
   });
 });
+

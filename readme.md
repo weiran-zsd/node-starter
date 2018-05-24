@@ -10,7 +10,8 @@ $ degit tplss/node
 
 ## Features
 
-+ eslint
++ eslint (eslint-config-egg + eslint-plugin-node)
++ husky
 + rollup
 + mocha
 + MIT license
