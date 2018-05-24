@@ -19,15 +19,6 @@ module.exports = [
     input: 'lib/index.js',
     output: {
       name: 'lib',
-      file: 'dist/lib.esm.min.js',
-      format: 'es',
-    },
-    plugins: [ resolve(), common(), butternut({ check: true }) ],
-  },
-  {
-    input: 'lib/index.js',
-    output: {
-      name: 'lib',
       file: 'dist/lib.js',
       format: 'umd',
     },
