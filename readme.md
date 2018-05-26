@@ -12,7 +12,9 @@
          alt="dependency status">
   </a>
 </p>
+
 # node
+
 > a Node.js boilerplate repo, with some useful deps.
 
 ## Usage
