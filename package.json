@@ -15,8 +15,8 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^5.1.0",
-    "eslint-config-ts": "^1.0.0",
+    "eslint": "^5.2.0",
+    "eslint-config-ts": "^1.0.1",
     "husky": "^1.0.0-rc.7",
     "mocha": "^5.2.0"
   },
