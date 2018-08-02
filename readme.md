@@ -22,7 +22,7 @@ $ degit tplss/node
 
 ## Features
 
-+ eslint (eslint-config-egg + eslint-plugin-node)
++ eslint (eslint-config-ts)
 + husky
 + mocha
 + MIT license
