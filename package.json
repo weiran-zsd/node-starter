@@ -1,45 +1,49 @@
 {
-  "name": "@tplss/node",
+  "name": "@weiran.zsd/templates",
   "version": "0.0.0",
-  "author": "薛定谔的猫 <hh_2013@foxmail.com>",
-  "description": "Node.js boilerplate",
-  "main": "./lib/index.js",
-  "scripts": {
-    "prettier": "prettier -w lib tests",
-    "lint": "eslint lib tests",
-    "test": "mocha tests/**/*",
-    "prepare": "husky install",
-    "release": "standard-version"
-  },
+  "private": false,
+  "description": "A full featured node.js starter.",
+  "keywords": [
+    "Node.js",
+    "template",
+    "eslint",
+    "esm"
+  ],
+  "license": "MIT",
+  "author": "唯然<weiran.zsd@outlook.com",
+  "type": "module",
+  "exports": "./lib/index.js",
   "files": [
     "LICENSE",
     "README.md",
     "lib"
   ],
-  "devDependencies": {
-    "eslint": "^7.29.0",
-    "eslint-plugin-node": "^11.1.0",
-    "husky": "^6.0.0",
-    "lint-staged": "^11.0.0",
-    "mocha": "^9.0.1",
-    "prettier": "^2.3.2",
-    "standard-version": "^9.3.0"
+  "scripts": {
+    "lint": "eslint lib tests",
+    "prepare": "husky install",
+    "prettier": "prettier -w lib tests",
+    "release": "npm test && standard-version",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
-  "keywords": [
-    "Node.js",
-    "boilerplate"
-  ],
   "eslintConfig": {
+    "env": {
+      "mocha": true
+    },
     "extends": [
       "eslint:recommended",
       "plugin:node/recommended"
-    ],
-    "env": {
-      "mocha": true
-    }
+    ]
   },
-  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "husky": "^7.0.4",
+    "jest": "^27.4.3",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.3.2",
+    "standard-version": "^9.3.0"
+  },
   "engines": {
-    "node": ">=8"
+    "node": ">=12"
   }
 }
