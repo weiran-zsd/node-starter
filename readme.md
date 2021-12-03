@@ -2,8 +2,22 @@
 
 ## Usage
 
-```bash
-$ npx degit weiran.zsd/starter
+```sh
+$ npx degit js-starter/node
+```
+
+```sh
+# run linting
+$ npm run lint [-- --fix]
+
+# run test
+$ npm test
+
+# watching test
+$ npm run test:watch
+
+# release
+$ npm run release
 ```
 
 ## Features
