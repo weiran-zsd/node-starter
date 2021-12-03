@@ -16,7 +16,8 @@
   "files": [
     "LICENSE",
     "README.md",
-    "lib"
+    "lib",
+    "!**/*.test.{js,ts}"
   ],
   "scripts": {
     "lint": "eslint lib",
