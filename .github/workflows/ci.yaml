@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+      - node
+      - node-ts
   pull_request:
     branches:
       - main
