@@ -1,0 +1,50 @@
+{
+  "name": "@js-starter/node",
+  "version": "0.1.0",
+  "author": "唯然 <weiran.zsd@outlook.com>",
+  "description": "A node.js application starter.",
+  "type": "module",
+  "exports": "./lib/index.js",
+  "scripts": {
+    "lint": "eslint lib tests",
+    "test": "mocha tests/**/*",
+    "prepare": "husky install"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "lib"
+  ],
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-plugin-n": "^14.0.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^12.1.2",
+    "mocha": "^9.1.3",
+    "prettier": "^2.5.1"
+  },
+  "keywords": [
+    "Node.js",
+    "eslint",
+    "prettier",
+    "esm",
+    "starter"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:n/recommended"
+    ],
+    "env": {
+      "mocha": true
+    }
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=12"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
+}
