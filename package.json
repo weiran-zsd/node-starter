@@ -42,7 +42,7 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=12"
+    "node": ">=v12.22.8"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
