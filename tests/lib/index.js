@@ -1,11 +1,9 @@
-'use strict';
+import { test } from "uvu";
+import { strict as assert } from "assert";
+import { add } from "../../lib/index.js";
 
-import { strict as assert } from 'assert';
-import { add } from '../../lib/index.js';
-
-describe('add', () => {
-  it('1 + 1 === 2', () => {
-    assert.strictEqual(add(1, 1), 2);
-  });
+test("add", () => {
+  assert.strictEqual(add(1, 1), 2);
 });
 
+test.run();

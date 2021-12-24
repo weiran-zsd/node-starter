@@ -1,29 +1,7 @@
 {
   "name": "@js-starter/node",
   "version": "0.1.0",
-  "author": "唯然 <weiran.zsd@outlook.com>",
   "description": "A node.js application starter.",
-  "type": "module",
-  "exports": "./lib/index.js",
-  "scripts": {
-    "lint": "eslint lib tests",
-    "test": "mocha tests/**/*",
-    "test:watch": "mocha tests/**/* -w -p",
-    "prepare": "husky install"
-  },
-  "files": [
-    "LICENSE",
-    "README.md",
-    "lib"
-  ],
-  "devDependencies": {
-    "eslint": "^8.5.0",
-    "eslint-plugin-n": "^14.0.0",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.1.3",
-    "mocha": "^9.1.3",
-    "prettier": "^2.5.1"
-  },
   "keywords": [
     "Node.js",
     "eslint",
@@ -31,21 +9,48 @@
     "esm",
     "starter"
   ],
-  "eslintConfig": {
-    "extends": [
-      "eslint:recommended",
-      "plugin:n/recommended"
-    ],
-    "env": {
-      "mocha": true
-    }
-  },
   "license": "MIT",
-  "engines": {
-    "node": ">=12.22.0"
+  "author": "唯然 <weiran.zsd@outlook.com>",
+  "type": "module",
+  "exports": "./lib/index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "lib"
+  ],
+  "scripts": {
+    "lint": "eslint lib tests",
+    "prepare": "husky install",
+    "test": "uvu tests",
+    "test:watch": "watchlist lib tests -- npm t",
+    "test:cov": "c8 --include=lib --reporter=lcov npm t",
+    "test:report": "codecov"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
     "*.{js,css,md}": "prettier --write"
+  },
+  "eslintConfig": {
+    "env": {
+      "mocha": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:n/recommended"
+    ]
+  },
+  "devDependencies": {
+    "c8": "^7.10.0",
+    "codecov": "^3.8.3",
+    "eslint": "^8.5.0",
+    "eslint-plugin-n": "^14.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.3",
+    "prettier": "^2.5.1",
+    "uvu": "^0.5.2",
+    "watchlist": "^0.3.1"
+  },
+  "engines": {
+    "node": ">=12.22.0"
   }
 }

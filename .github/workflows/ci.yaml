@@ -44,4 +44,12 @@ jobs:
     - name: building
       run: npm run build --if-present
     - name: Run tests
-      run: npm run test
+      run: npm run test:cov
+  
+    - name: Publish code coverage report
+      uses: codecov/codecov-action@v2
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        files: "coverage.lcov"
+        flags: unittest
+        name: codecov

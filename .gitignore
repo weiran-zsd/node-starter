@@ -1,6 +1,7 @@
 /node_modules
 /dist
 coverage/
+coverage.lcov
 npm-debug.log
 .DS_Store
 .idea
