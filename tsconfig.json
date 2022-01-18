@@ -1,0 +1,9 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "allowJs": true,
+    "module": "es2015"
+  },
+  "include": ["./lib"]
+}
